@@ -50,7 +50,7 @@ int64_t Client::SendFile(SOCKET& s, const std::string& fileName, int chunkSize)
         {
             std::cout << "Procents: " << procent << "\t--> " << sum_of_transfer << std::endl;
             procent += 10;
-            Sleep(30);
+            Sleep(100);
             change_port(s, addr_info, add_port_number);
             add_port_number += 5;
         }
